@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task CSS </title>
+    <style>
+        .web-container {
+            width: 1200px;
+            height: 600px;
+            background-color: #f0f0f0;
+            /* agar padding tidak mengganggu witdh nya */
+            box-sizing: border-box;
+            padding: 0 5%;
+            /* agar tetep di tengah */
+            margin: 0 auto;
+            display: block;
+            /* agar element di dalamnya bisa di setting posisinya dimana saja *harus absolute */
+            position: relative;
+        }
+        
+        .red-box {
+            background-color: red;
+            width: 400px;
+            height: 200px;
+            display: block;
+            /* agar bisa selalu di tengah */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .green-box {
+            background-color: lime;
+            width: 140px;
+            height: 80px;
+            display: block;
+            /* agar selalu di kanan bawah */
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="web-container">
+        <div class="red-box">
+            <div class="green-box"></div>
+        </div>
+    </div>
+</body>
+
+</html>

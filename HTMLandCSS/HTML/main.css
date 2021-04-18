@@ -1,0 +1,435 @@
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+section {
+    width: 100%;
+}
+
+.container {
+    padding: 0 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+}
+
+a {
+    transition: ease all .5s;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -ms-transition: ease all .5s;
+    -o-transition: ease all .5s;
+}
+
+.title {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 15px 0 32px;
+}
+
+
+/* header */
+
+.header {
+    display: block;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    /* agar tetep di atas */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header-box {
+    /* agar element di dalammnya mudah di atur posisinya */
+    display: flex;
+    /* membuat jarak antar element selalu sama ujung ke ujung */
+    justify-content: space-between;
+    /* element tepat di posisi tengah */
+    align-items: center;
+}
+
+.header-box .logo {
+    width: 33%;
+    max-width: 130px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.header-box .logo img {
+    height: 30px;
+    max-width: 100%;
+}
+
+.header-box .menu {
+    text-align: right;
+}
+
+.header-box .menu a {
+    color: black;
+    font-size: 12px;
+    display: inline-block;
+    padding: 15px 10px;
+    background-color: transparent;
+    text-decoration: none;
+    /*agar efek transisi mulus */
+    transition: ease all .5s;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -ms-transition: ease all .5s;
+    -o-transition: ease all .5s;
+}
+
+.header-box .menu a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* end header */
+
+
+/* banner */
+
+.banner {
+    margin: 40px 0 0;
+    position: relative;
+}
+
+.banner .banner-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 200px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.banner .banner-img {
+    width: 100%;
+}
+
+
+/* end banner */
+
+
+/* project */
+
+.project {
+    padding: 32px 0;
+}
+
+.project-box {
+    /* agar element di dalammnya mudah di atur posisinya */
+    display: flex;
+    /* membuat jarak antar element selalu sama ujung ke ujung */
+    justify-content: space-between;
+    /* element tepat di posisi tengah */
+    align-items: center;
+    /* element jadi sejajar */
+    flex-flow: row wrap;
+}
+
+.project-item {
+    display: block;
+    position: relative;
+    max-width: 420px;
+    width: 100%;
+    margin: 16px 0;
+    height: 220px;
+    /* agar content di dalam tidak tembus keluar */
+    overflow: hidden;
+}
+
+.project-item img {
+    position: absolute;
+    height: 221px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.project-item h4 {
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-weight: normal;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    z-index: 1;
+}
+
+
+/* end project */
+
+
+/* about */
+
+.about {
+    padding: 32px 0;
+}
+
+.about .content {
+    margin: 0 0 32px;
+}
+
+.about-box {
+    /* agar element di dalammnya mudah di atur posisinya */
+    display: flex;
+    /* membuat jarak antar element selalu sama ujung ke ujung */
+    justify-content: space-between;
+    /* element jadi sejajar */
+    flex-flow: row wrap;
+}
+
+.about-item {
+    display: block;
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    margin: 16px 0;
+    /* agar content di dalam tidak tembus keluar */
+    overflow: hidden;
+}
+
+.about-item .imej {
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.about-item .imej img {
+    height: 241px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.about-item .name {
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+.about-item .pos {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #535353;
+}
+
+.about-item .desc {
+    margin: 15px 0;
+    overflow: hidden;
+    height: 76px;
+}
+
+.about-item .btn {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: black;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: inline-block;
+    transition: ease all .5s;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -ms-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about-item .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* end about */
+
+
+/* contact */
+
+.contact {
+    padding: 32px 0 16px;
+}
+
+.contact-box {
+    display: block;
+}
+
+.contact-box form {
+    padding: 15px 0;
+}
+
+.contact-box input,
+.contact-box textarea {
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 10px 15px;
+    margin: 7px 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.contact-box .btn2 {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 16px;
+    transition: ease all .5s;
+    -webkit-transition: ease all .5s;
+    -moz-transition: ease all .5s;
+    -ms-transition: ease all .5s;
+    -o-transition: ease all .5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact-box .btn2:hover {
+    background-color: #c2c2c2;
+    color: black;
+}
+
+.contact-box .map {
+    width: 100%;
+    margin: 15px 0 0;
+}
+
+.contact-box .map img {
+    width: 100%;
+}
+
+
+/* end contact */
+
+
+/* footer */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+
+/*End footer */
+
+
+/* responsive */
+
+@media (min-width: 421px) {
+    .header-box .logo {
+        font-size: 16px;
+    }
+    .header-box .menu a {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+    .header-box .logo img {
+        height: 40px;
+    }
+    .project-item {
+        display: block;
+        position: relative;
+        max-width: 420px;
+        width: 48%;
+        margin: 16px 0;
+        height: 240px;
+        /* agar content di dalam tidak tembus keluar */
+        overflow: hidden;
+    }
+    .project-item img {
+        height: 241px;
+    }
+    .about-item {
+        width: 48%;
+        margin: 16px 0;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 961px) {
+    .project-item {
+        width: 24%;
+    }
+    .project-item img {
+        height: 141px;
+    }
+    .about-item {
+        width: 24%;
+        margin: 8px 0;
+    }
+}
+
+@media (min-width:1201px) {
+    .project-item {
+        display: block;
+        position: relative;
+        max-width: 420px;
+        width: 24%;
+        margin: 8px 0;
+        height: 200px;
+        /* agar content di dalam tidak tembus keluar */
+        overflow: hidden;
+    }
+    .project-item img {
+        height: 201px;
+    }
+    .about-item {
+        width: 24%;
+    }
+}
+
+
+/*end responsive */
